@@ -10,10 +10,8 @@ import java.io.IOException;
 
 
 public class ProductServlet extends HttpServlet {
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("Redirect");
         Product[] array = new Product[10];
         array[0]=new Product(1,"Молоко",80);
         array[1]=new Product(2,"Кефир",40);
